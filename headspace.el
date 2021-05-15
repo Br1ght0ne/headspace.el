@@ -63,7 +63,8 @@
                   actions)))))
 
 (defun headspace-add-hooks ()
-  "Add hooks to editing events."
+  "Add hooks to editing events and killing Emacs."
+  (add-hook 'kill-emacs-hook #'headspace-stop-server)
   (dolist (event headspace-events)
     (let ((handler (headspace-create-event-handler (car event) headspace-actions)))
       (dolist (hook (cdr event))
