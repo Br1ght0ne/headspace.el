@@ -9,7 +9,7 @@
 ;; Version: 0.0.1
 ;; Keywords: multimedia
 ;; Homepage: https://github.com/Br1ght0ne/headspace.el
-;; Package-Requires: ((emacs "24.3") flycheck web-server)
+;; Package-Requires: ((emacs "24.3") flycheck (web-server "0.1.2"))
 ;;
 ;; This file is not part of GNU Emacs.
 ;;
